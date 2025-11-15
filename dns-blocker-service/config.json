@@ -1,0 +1,30 @@
+{
+  "server": {
+    "port": 9053,
+    "bind_address": "127.0.0.1",
+    "upstream_dns": "8.8.8.8",
+    "upstream_dns_backup": "8.8.4.4"
+  },
+  "model": {
+    "path": "../DNS/dns_adblocker_model.ubj",
+    "feature_names_path": "../DNS/feature_names.json",
+    "threshold": 0.5
+  },
+  "logging": {
+    "enabled": true,
+    "level": "INFO",
+    "log_file": "dns_blocker.log",
+    "show_allowed": true,
+    "show_blocked": true
+  },
+  "performance": {
+    "cache_enabled": true,
+    "cache_size": 1000,
+    "cache_ttl": 3600
+  },
+  "notes": {
+    "port_53_requires_sudo": "To run on port 53 (system-wide), use: sudo python3 dns_blocker_server.py",
+    "upstream_dns_options": "8.8.8.8 (Google), 1.1.1.1 (Cloudflare), 9.9.9.9 (Quad9)",
+    "threshold_info": "Lower threshold (0.3-0.4) = more aggressive blocking, Higher (0.6-0.7) = more conservative"
+  }
+}
