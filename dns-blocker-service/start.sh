@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # DNS Ad Blocker - Simple Starter
-# Easy way to start the blocker with proper permissions
 #
 
 GREEN='\033[0;32m'

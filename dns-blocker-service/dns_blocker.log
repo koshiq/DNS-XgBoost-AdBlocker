@@ -1,1 +1,34 @@
-[ERROR] Model file not found: /home/koshiq/network-traffic-project/dns-blocker-service/../DNS/DNSadblocker_model.ubj
+
+╔═══════════════════════════════════════════════════════════════════╗
+║                   DNS AD BLOCKER SERVER                           ║
+║                   Machine Learning Powered                        ║
+╚═══════════════════════════════════════════════════════════════════╝
+    
+[NOTE] Port 53 requires root privileges. Run with sudo:
+       sudo python3 dns_blocker_server.py
+
+[INIT] Loading DNS Ad Blocker Server...
+[INIT] Upstream DNS: 8.8.8.8
+[INIT] Listening port: 53
+[INIT] Block threshold: 0.95
+[INIT] Loading model from /home/koshiq/network-traffic-project/dns-blocker-service/../DNS/DNSadblocker_model.ubj...
+[INIT] Model loaded successfully
+[INIT] Loading feature names from /home/koshiq/network-traffic-project/dns-blocker-service/../FeatureNames.json...
+[INIT] 68 features loaded
+[INIT] Feature extractor initialized
+[INIT] Server initialized successfully!
+
+
+======================================================================
+  DNS BLOCKER STATISTICS
+======================================================================
+  Total queries:   0
+  Blocked (ads):   0 (0.0%)
+  Allowed (legit): 0 (0.0%)
+  Errors:          0
+======================================================================
+
+[SHUTDOWN] DNS server stopped
+
+[ERROR] Permission denied. Port 53 requires root privileges.
+[ERROR] Run with: sudo python3 /home/koshiq/network-traffic-project/dns-blocker-service/dns_blocker_server.py
